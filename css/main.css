@@ -1,0 +1,177 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #ddd;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  padding: 50px 0;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn-danger {
+  background-color: #f37737 !important;
+  border-color: #f37737;
+}
+
+.global-wrap {
+  min-height: 100%;
+  max-width: 1680px;
+  min-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-self: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.header {
+  flex: 0 1 auto;
+}
+
+.navbar-logo {
+  width: 75px;
+}
+
+.navbar-text a {
+  color: rgba(255, 255, 255, .75) !important;
+}
+
+.wrap-content {
+  flex: 1 1 auto;
+  height: 100%;
+  padding: 0 0 30px;
+}
+
+.main-section {
+  background-image: url('../img/bg/bg_carservice_5.jpg');
+  background-size: cover;
+  max-width: 1980px;
+  height: 800px;
+  box-shadow: 0 2px 5px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.wrap-main {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  /* align-items: center; */
+  align-content: flex-start;
+  height: 800px;
+  text-align: center;
+  z-index: 2;
+}
+
+.main-title {
+  margin-top: 78px;
+  color: #eee;
+  font-size: 36px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.main-desc {
+  color: #ddd;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.wrap-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* .serv-section {
+  text-align: center;
+} */
+
+.serv-title {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 2px 5px;
+}
+
+.serv-item-img, .serv-item-title {
+  text-align: center;
+}
+
+.serv-item-img {
+  margin-top: 40px;
+}
+
+.serv-item-img a img {
+  max-width: 250px;
+  width: 100%;
+}
+
+.serv-item-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 28px;
+  text-shadow: 0 2px 5px;
+}
+
+.serv-item-title a {
+  color: #333;
+}
+
+.serv-item-desc p {
+  margin: 0;
+}
+
+.clients-img img {
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.clients-desc {
+  font-size: 15px;
+  margin: 20 0;
+  padding-left: 20px;
+  border-left: 20px solid #249648;
+}
+
+.footer {
+  flex: 0 1 auto;
+  background-image: url('../img/double-bubble-dark/double-bubble-dark.png');
+}
+
+.footer-corpinfo {
+  padding: 30px 0;
+}
+
+.footer-corpinfo-brand, .footer-corpinfo-copyright {
+  color: rgba(255, 255, 255, .75);
+  margin: 0;
+}
+
+.footer-corpinfo-copyright {
+  font-size: 12px;
+  font-style: italic;
+}
