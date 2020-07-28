@@ -31,16 +31,33 @@ section {
   max-width: 1680px;
   min-width: 320px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
-  justify-self: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  /*муть странная в уроке тут content у меня было self */
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
   align-content: stretch;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .header {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
   flex: 0 1 auto;
 }
 
@@ -53,6 +70,9 @@ section {
 }
 
 .wrap-content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   height: 100%;
 }
@@ -65,7 +85,7 @@ section {
   background-image: url('../img/bg/bg_carservice_5.jpg');
   background-size: cover;
   max-width: 1980px;
-  height: 800px;
+  height: 100vh;
   box-shadow: 0 2px 5px;
 }
 
@@ -81,12 +101,25 @@ section {
 
 .wrap-main {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
   justify-content: flex-start;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
-  /* align-items: center; */
-  align-content: flex-start;
-  height: 800px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch; /* у меня был flex-start*/
+  height: 100vh;
   text-align: center;
   z-index: 2;
 }
@@ -250,6 +283,9 @@ section {
 }
 
 .footer {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   background-image: url('../img/double-bubble-dark/double-bubble-dark.png');
 }
