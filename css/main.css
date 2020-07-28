@@ -118,7 +118,7 @@ section {
   align-items: center;
   -webkit-align-content: stretch;
   -ms-flex-line-pack: stretch;
-  align-content: stretch; /* у меня был flex-start*/
+  align-content: stretch; /* у меня был flex-start */
   height: 100vh;
   text-align: center;
   z-index: 2;
